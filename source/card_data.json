@@ -1,0 +1,174 @@
+{
+  "role": {
+      "13": {
+          "name": "Провидица",
+          "description": " ",
+          "front_path": "../source/cards/front/13.png",
+          "back_path": "../source/cards/back/8-1.png"
+      },
+      "17": {
+          "name": "Вор",
+          "description": " ",
+          "front_path": "../source/cards/front/17.png",
+          "back_path": "../source/cards/back/8-1.png"
+      },
+      "25": {
+          "name": "Фотограф",
+          "description": " ",
+          "front_path": "../source/cards/front/25.png",
+          "back_path": "../source/cards/back/8-1.png"
+      },
+      "30": {
+          "name": "Информатор",
+          "description": " ",
+          "front_path": "../source/cards/front/30.png",
+          "back_path": "../source/cards/back/8-1.png"
+      },
+      "42": {
+          "name": "Посторонним В",
+          "description": " ",
+          "front_path": "../source/cards/front/42.png",
+          "back_path": "../source/cards/back/8-1.png"
+      },
+      "45": {
+          "name": "Шут.ник",
+          "description": " ",
+          "front_path": "../source/cards/front/45.png",
+          "back_path": "../source/cards/back/8-1.png"
+      }
+  },
+  "loyalty": {
+      "47": {
+          "name": "Человек",
+          "description": "Карта показывающая принадлежность к фракции людей",
+          "front_path": "../source/cards/front/47.png",
+          "back_path": "../source/cards/back/47-1.png"
+      },
+      "54": {
+          "name": "Человек х2",
+          "description": "Карта показывающая принадлежность к фракции людей в двойном объёме",
+          "front_path": "../source/cards/front/54.png",
+          "back_path": "../source/cards/back/47-1.png"
+      },
+      "56": {
+          "name": "Машина",
+          "description": "Карта показывающая принадлежность к фракции машин",
+          "front_path": "../source/cards/front/56.png",
+          "back_path": "../source/cards/back/47-1.png"
+      },
+      "62": {
+          "name": "Машина х2",
+          "description": "Карта показывающая принадлежность к фракции машин в двойном объёме",
+          "front_path": "../source/cards/front/62.png",
+          "back_path": "../source/cards/back/47-1.png"
+      },
+      "65": {
+          "name": "Изгой",
+          "description": "Карта показывающая принадлежность к фракции изгоев",
+          "front_path": "../source/cards/front/65.png",
+          "back_path": "../source/cards/back/47-1.png"
+      },
+      "68": {
+          "name": "Изгой х2",
+          "description": "Карта показывающая принадлежность к фракции изгоев в двойном объёме",
+          "front_path": "../source/cards/front/68.png",
+          "back_path": "../source/cards/back/47-1.png"
+      }
+  },
+  "program": {
+      "72": {
+          "description": "Вы можете восстановить одну жизнь любому живому игроку",
+          "front_path": "../source/cards/front/72.png",
+          "back_path": "../source/cards/back/69-1.png"
+      },
+      "75": {
+          "description": "Откройте любую скрытую роль или скройте любую открытую роль",
+          "front_path": "../source/cards/front/75.png",
+          "back_path": "../source/cards/back/69-1.png"
+      },
+      "79": {
+          "description": "Откройте по одной карте верности у двух разных игроков",
+          "front_path": "../source/cards/front/79.png",
+          "back_path": "../source/cards/back/69-1.png"
+      },
+      "98": {
+          "description": "Выберите роль другого игрока и подсмотрите её. Возьмите из колоды другую карт программы",
+          "front_path": "../source/cards/front/98.png",
+          "back_path": "../source/cards/back/69-1.png"
+      }
+
+  },
+  "weapon": {
+      "pistol": {
+          "description": "",
+          "front_path": "../source/cards/front/1.png",
+          "back_path": "../source/cards/back/1-1.png"
+      },
+      "rifle": {
+          "description": "",
+          "front_path": "../source/cards/front/4.png",
+          "back_path": "../source/cards/back/4-1.png"
+      },
+      "launcher": {
+          "description": "",
+          "front_path": "../source/cards/front/6.png",
+          "back_path": "../source/cards/back/6-1.png"
+      },
+      "laser": {
+          "description": "",
+          "front_path": "../source/cards/front/7.png",
+          "back_path": "../source/cards/back/7-1.png"
+      }
+  },
+  "action": {
+      "action": {
+          "description": "С помощью этой карты вы выбираете какое действие совершить в этом ходу",
+          "front_path": "../source/cards/front/46-1.png",
+          "back_path": "../source/cards/front/46.png"
+      }
+  },
+  "pos": {
+      "center": {
+          "pistol": [610, 545],
+          "rifle": [610, 395],
+          "launcher": [850, 395],
+          "laser": [850, 545],
+          "program": [1090, 545],
+          "role": [1130, 355],
+          "loyalty": [1130, 355],
+          "action": [1090, 395]
+      },
+      "self": {
+          "role": [950, 850],
+          "loyalty": [[710, 850], [1190, 850]],
+          "program": [[910, 700], [1150, 700]],
+          "weapon": [670, 700],
+          "action": [430, 850],
+          "name": [[430, 990], [218, 42]]
+      },
+      "left": {
+          "role": [70, 490],
+          "loyalty": [[70, 250], [70, 730]],
+          "program": [[230, 530], [230, 760]],
+          "weapon": [230, 290],
+          "action": [70, 50],
+          "name": [[110, 10], [218, 42]]
+      },
+      "opposite": {
+          "role": [830, 10],
+          "loyalty": [[590, 10], [1070, 10]],
+          "program": [[790, 240], [550, 240]],
+          "weapon": [1030, 240],
+          "action": [1270, 90],
+          "name": [[1270, 50], [218, 42]]
+      },
+      "right": {
+          "role": [1710, 370],
+          "loyalty": [[1710, 610], [1710, 130]],
+          "program": [[1470, 410], [1470, 170]],
+          "weapon": [1470, 650],
+          "action": [1630, 890],
+          "name": [[1810, 850], [218, 42]]
+      }
+  }
+}
