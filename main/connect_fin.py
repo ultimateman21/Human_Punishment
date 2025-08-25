@@ -2,7 +2,7 @@ from PyQt6.QtWidgets import QWidget, QPushButton, QLineEdit, QTextEdit, QSpacerI
 from PyQt6.QtGui import QFontDatabase, QFont, QRegularExpressionValidator, QPixmap, QPainter
 from PyQt6.QtCore import QThread, pyqtSignal, QTimer, QRegularExpression
 
-from socket import socket, AF_INET, SOCK_DGRAM, SOCK_STREAM, SOL_SOCKET, SO_BROADCAST
+from socket import socket, AF_INET, SOCK_DGRAM, SOCK_STREAM, SOL_SOCKET, SO_BROADCAST, SO_REUSEADDR
 from json import dumps, loads
 from threading import Thread
 from time import sleep
@@ -126,9 +126,9 @@ class ConnectPlayers(QThread):
         self.connect()
 
     def find_servers(self):
-        udp_socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-        udp_socket.setsockopt(socket.SOL_SOCKET, socket.SO_BROADCAST, 1)
-        udp_socket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+        udp_socket = socket(AF_INET, SOCK_DGRAM)
+        udp_socket.setsockopt(SOL_SOCKET, SO_BROADCAST, 1)
+        udp_socket.setsockopt(SOL_SOCKET, SO_REUSEADDR, 1)
         udp_socket.bind(('', 50000))
         udp_socket.settimeout(300)
         try:
@@ -147,7 +147,7 @@ class ConnectPlayers(QThread):
         try:
             connections = []
             for peer in self.servers:
-                sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+                sock = socket(AF_INET, SOCK_STREAM)
                 sock.connect((peer[0], int(peer[1])))
                 connections.append(sock)
             self.sendConnections.emit(connections)
