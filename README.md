@@ -16,3 +16,5 @@
 Эта программа результат группового учебного проекта ознакомится с документацией можно ниже
 
 [отчёт.pdf](https://github.com/user-attachments/files/21959873/Dokumentatsia_zarubezhnye_praktiki.pdf)
+
+[Презентация.pdf](https://github.com/user-attachments/files/21959965/Prezentatsia_zarubezhn-.pdf)
